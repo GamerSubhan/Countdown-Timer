@@ -1,0 +1,217 @@
+.attribution { font-size: 11px; text-align: center; margin-top: -2%; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body
+{
+    background-color: hsl(235, 16%, 14%);
+}
+
+#container
+{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+@font-face {
+    font-family: redHat;
+    src: url('Red_Hat_Text/RedHatText-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: redHatBold;
+    src: url('Red_Hat_Text/static/RedHatText-Bold.ttf');
+}
+
+h1
+{
+    color: hsl(0, 0%, 100%);
+    margin-top: 10%;
+    text-transform: uppercase;
+    font-family: redHat;
+    letter-spacing: 4px;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+#calendarGrids
+{
+    position: absolute;
+    margin-top: 18%;
+    margin-right: 10%;
+}
+
+#icons
+{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+#icons li
+{
+    margin-left: 40%;
+    color: #60FBD4;
+}
+
+li
+{
+    margin-left: 5%;
+    color: hsl(237, 18%, 59%);
+    font-family: redHatBold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #CCCCCC;
+}
+
+@keyframes flipdown {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-180deg);
+    }
+}
+
+.flipdown {
+    animation: flipdown 0.6s ease-in-out;
+    overflow: visible;
+}
+
+#calendarGrid
+{
+    width: 130px;
+    height: 130px;
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 6px;
+    color: hsl(345, 95%, 68%);
+    text-align: center;
+    font-size: 80px;
+    perspective-origin: 50% 50%;
+}
+
+#calendarGridd
+{
+    width: 130px;
+    height: 130px;
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 6px;
+    color: hsl(345, 95%, 68%);
+    text-align: center;
+    position: absolute;
+    font-size: 80px;
+    perspective-origin: 50% 50%;
+}
+
+#calendarGrid p
+{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    font-family: redHatBold;
+    transform-style: preserve-3d;
+}
+
+#calendarGrid p
+{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    font-family: redHatBold;
+    transform-style: preserve-3d;
+}
+
+hr {
+    margin: 0; 
+    border: none; 
+    border-top: 1px solid hsl(234, 17%, 12%); 
+    position: absolute;
+    height: 1px;
+    width: 23.5%;
+    top: 45%;
+    left: 11.5%;
+    right: 0;
+
+}
+
+#calendarGrid::before, 
+#calendarGrid::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 6px;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    transform: translateY(-50%);
+}
+
+#calendarGrid::before
+{
+    margin-top: -7px;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+#calendarGrid::after
+{
+    margin-top: -7px;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.card::before {
+    left: 63px;
+}
+
+.card::after {
+    right: 360.6px;
+}
+
+#hoursLine
+{
+    margin-left: 28%;
+}
+
+.card2::before {
+    left: 219px;
+}
+
+.card2::after {
+    right: 204.5px;
+}
+
+.card3::before {
+    left: 375px;
+}
+
+.card3::after {
+    right: 48.4px;
+}
+
+#minutesLine
+{
+    margin-left: 56%;
+}
+
+.card4::before {
+    left: 531px;
+}
+
+.card4::after {
+    right: -107.7px;
+}
+
+
+#secondsLine
+{
+    margin-left: 84%;
+}
